@@ -37,13 +37,13 @@ campos:
 # Labels criadas (ou atualizadas) em todos os repositórios da organização.
 # Cor em hexadecimal, sem o "#".
 labels:
-  - { nome: bug, cor: d73a4a, descricao: Algo não funciona como deveria }
-  - { nome: funcionalidade, cor: 0e8a16, descricao: Nova funcionalidade ou melhoria }
-  - { nome: tarefa, cor: c5def5, descricao: Tarefa técnica sem nova funcionalidade }
-  - { nome: dados, cor: 1d76db, descricao: Coleta, ETL, limpeza ou carga de dados }
-  - { nome: pesquisa, cor: 5319e7, descricao: Atividade de pesquisa }
-  - { nome: docs, cor: 0075ca, descricao: Documentação }
-  - { nome: infra, cor: fbca04, descricao: Deploy, VPS, Coolify, Docker }
-  - { nome: good first issue, cor: 7057ff, descricao: Boa para quem acabou de sair do nivelamento }
-  - { nome: bloqueado, cor: b60205, descricao: Depende de algo externo para continuar }
-  - { nome: precisa de ajuda, cor: 008672, descricao: O responsável pediu apoio }
+  - { nome: bug, cor: d73a4a, descricao: "Algo não funciona como deveria" }
+  - { nome: funcionalidade, cor: 0e8a16, descricao: "Nova funcionalidade ou melhoria" }
+  - { nome: tarefa, cor: c5def5, descricao: "Tarefa técnica sem nova funcionalidade" }
+  - { nome: dados, cor: 1d76db, descricao: "Coleta, ETL, limpeza ou carga de dados" }
+  - { nome: pesquisa, cor: 5319e7, descricao: "Atividade de pesquisa" }
+  - { nome: docs, cor: 0075ca, descricao: "Documentação" }
+  - { nome: infra, cor: fbca04, descricao: "Deploy, VPS, Coolify, Docker" }
+  - { nome: good first issue, cor: 7057ff, descricao: "Boa para quem acabou de sair do nivelamento" }
+  - { nome: bloqueado, cor: b60205, descricao: "Depende de algo externo para continuar" }
+  - { nome: precisa de ajuda, cor: 008672, descricao: "O responsável pediu apoio" }
