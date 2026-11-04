@@ -1,0 +1,69 @@
+site_name: NARA — Handbook
+site_description: Guia interno do Núcleo de Análise de Dados e Recursos Analíticos (LEA · UEMA)
+site_url: https://handbook.nucleonara.tech
+repo_url: https://github.com/GRUPO-NARA/nara-handbook
+repo_name: GRUPO-NARA/nara-handbook
+edit_uri: edit/main/docs/
+copyright: © NARA — LEA · UEMA
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+
+nav:
+  - Início: index.md
+  - Laboratório:
+      - Membros: laboratorio/membros.md
+      - Stack: laboratorio/stack.md
+      - Processo e rituais: laboratorio/processo.md
+      - Infraestrutura: laboratorio/infra.md
+  - Nivelamento: nivelamento/index.md
+  - Projetos: projetos/index.md
+  - Pesquisa:
+      - pesquisa/index.md
+      - Protocolo de pesquisa: pesquisa/protocolo.md
+      - Analfabetismo no MA: pesquisa/analfabetismo.md
+      - Feminicídio no MA: pesquisa/feminicidio.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
