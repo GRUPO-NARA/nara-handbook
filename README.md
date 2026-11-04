@@ -25,6 +25,15 @@ Membros, projetos e pesquisas ficam em `data/` e geram as páginas automaticamen
 | `data/membros.yml` | Membros e status (ativo, nivelamento, egresso) |
 | `data/projetos.yml` | Projetos de software |
 | `data/pesquisas.yml` | Pesquisas |
+| `data/github.yml` | Labels e campos do GitHub Projects |
+
+Para aplicar labels e campos do Projects na organização:
+
+```bash
+gh auth refresh -s project,read:org
+python scripts/configurar_github.py --simular
+python scripts/configurar_github.py
+```
 
 Os campos aceitos estão descritos no topo de cada arquivo. Se um id citado não existir ou um status for inválido, o build falha e mostra o erro.
 

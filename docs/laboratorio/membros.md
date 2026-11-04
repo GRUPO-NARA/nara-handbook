@@ -17,10 +17,8 @@
 {% if niv %}
 ## Em nivelamento
 
-| Nome | Entrada |
-|---|---|
 {% for m in niv -%}
-| {{ m.nome }} | {{ ou_traco(m.entrada) }} |
+- {% if m.github %}[{{ m.nome }}](https://github.com/{{ m.github }}){% else %}{{ m.nome }}{% endif %}
 {% endfor %}
 {% endif %}
 

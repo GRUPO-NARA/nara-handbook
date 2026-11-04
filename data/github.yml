@@ -1,0 +1,49 @@
+# Configuração do GitHub da organização, aplicada por scripts/configurar_github.py.
+# As opções do campo "Projeto" vêm de data/projetos.yml e data/pesquisas.yml,
+# mais as opções extras listadas abaixo.
+
+organizacao: GRUPO-NARA
+projeto: NARA — Roadmap
+
+# Opções extras do campo "Projeto" (além dos projetos e pesquisas cadastrados)
+projetos_extras: [Handbook, Site institucional, Nivelamento, Geral]
+
+# Campos personalizados do GitHub Projects.
+# Tipos aceitos pelo CLI: SINGLE_SELECT, DATE, NUMBER, TEXT.
+# "Status" já existe por padrão e "Iteração" precisa ser criado pela interface.
+campos:
+  - nome: Projeto
+    tipo: SINGLE_SELECT
+    opcoes: automatico
+  - nome: Tipo
+    tipo: SINGLE_SELECT
+    opcoes: [Software, Pesquisa, Gestão]
+  - nome: Área
+    tipo: SINGLE_SELECT
+    opcoes: [Front-end, Back-end, Dados/ETL, Infra, Docs, Pesquisa]
+  - nome: Prioridade
+    tipo: SINGLE_SELECT
+    opcoes: [Alta, Média, Baixa]
+  - nome: Etapa da pesquisa
+    tipo: SINGLE_SELECT
+    opcoes: [Revisão bibliográfica, Coleta, Tratamento, Análise, Escrita, Submissão]
+  - nome: Início
+    tipo: DATE
+  - nome: Data alvo
+    tipo: DATE
+  - nome: Estimativa
+    tipo: NUMBER
+
+# Labels criadas (ou atualizadas) em todos os repositórios da organização.
+# Cor em hexadecimal, sem o "#".
+labels:
+  - { nome: bug, cor: d73a4a, descricao: Algo não funciona como deveria }
+  - { nome: funcionalidade, cor: 0e8a16, descricao: Nova funcionalidade ou melhoria }
+  - { nome: tarefa, cor: c5def5, descricao: Tarefa técnica sem nova funcionalidade }
+  - { nome: dados, cor: 1d76db, descricao: Coleta, ETL, limpeza ou carga de dados }
+  - { nome: pesquisa, cor: 5319e7, descricao: Atividade de pesquisa }
+  - { nome: docs, cor: 0075ca, descricao: Documentação }
+  - { nome: infra, cor: fbca04, descricao: Deploy, VPS, Coolify, Docker }
+  - { nome: good first issue, cor: 7057ff, descricao: Boa para quem acabou de sair do nivelamento }
+  - { nome: bloqueado, cor: b60205, descricao: Depende de algo externo para continuar }
+  - { nome: precisa de ajuda, cor: 008672, descricao: O responsável pediu apoio }
