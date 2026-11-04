@@ -1,0 +1,38 @@
+# Pesquisas do NARA.
+#
+# Campos:
+#   status     planejada | em-andamento | concluida
+#   etapa      revisao | coleta | tratamento | analise | escrita | submissao | publicada
+#   membros    lista de ids de data/membros.yml
+#   resultados prêmios, artigos, apresentações
+
+- id: analfabetismo
+  nome: Analfabetismo nos Municípios do Maranhão
+  status: concluida
+  etapa: publicada
+  descricao: Estudo dos indicadores de analfabetismo entre 1991 e 2022, com visualizações comparativas e dashboard interativo para identificar padrões e diferenças regionais.
+  periodo: 1991–2022
+  fontes: [IPEADATA]
+  stack: [Python, Pandas, Matplotlib, Seaborn]
+  orientador: null
+  membros: [julio, ana-elisa, bruno, carlos]
+  resultados:
+    - Premiação de destaque na XVIII Semana de Administração da UFMA (SEAD 2025)
+  repositorio: null
+  pagina: pesquisa/analfabetismo.md
+  imagem: projetos/sead.jpeg
+
+- id: feminicidio
+  nome: Feminicídio no Maranhão
+  status: planejada
+  etapa: revisao
+  descricao: Análise da evolução dos casos de feminicídio no Maranhão, cruzando dados de segurança pública e de saúde.
+  periodo: null
+  fontes: [SSP-MA, Anuário Brasileiro de Segurança Pública, SIM/DataSUS]
+  stack: [Python, Pandas, Streamlit]
+  orientador: null
+  membros: []
+  resultados: []
+  repositorio: null
+  pagina: pesquisa/feminicidio.md
+  imagem: null

@@ -1,0 +1,18 @@
+# Informações institucionais. O site e o handbook usam estes valores,
+# então o nome oficial só precisa ser corrigido aqui.
+sigla: NARA
+nome: Núcleo de Análise e Recursos Analíticos
+slogan: Sempre em busca de informações...
+laboratorio: LEA — Laboratório de Engenharia Aplicada
+instituicao: UEMA — Universidade Estadual do Maranhão
+curso: Engenharia da Computação
+cidade: São Luís, MA
+fundacao: 2025
+email: nara.nucleo@gmail.com
+links:
+  site: https://site-nara-rho.vercel.app/
+  handbook: https://handbook.nucleonara.tech
+  github: https://github.com/GRUPO-NARA
+  roadmap: https://github.com/orgs/GRUPO-NARA/projects
+  linkedin: https://www.linkedin.com/company/nucleonara/
+  instagram: https://www.instagram.com/nara.uema/

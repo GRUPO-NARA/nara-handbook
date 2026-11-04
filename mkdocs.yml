@@ -34,6 +34,13 @@ theme:
         icon: material/weather-sunny
         name: Modo claro
 
+plugins:
+  - search:
+      lang: pt
+  - macros:
+      module_name: main
+      on_error_fail: true
+
 nav:
   - Início: index.md
   - Laboratório:

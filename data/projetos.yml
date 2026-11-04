@@ -1,0 +1,48 @@
+# Projetos de software do NARA. Pesquisas ficam em data/pesquisas.yml.
+#
+# Campos:
+#   status       planejado | em-andamento | pausado | concluido
+#   responsavel  id de data/membros.yml
+#   repositorio  nome do repositório em GRUPO-NARA (ou null)
+
+- id: mapa-social
+  nome: Mapa Social do Maranhão
+  categoria: Dados públicos
+  status: em-andamento
+  descricao: Plataforma web de código aberto que integra e visualiza indicadores sociais dos 217 municípios maranhenses para apoiar políticas públicas e ampliar o acesso à informação.
+  parceiro: Ministério Público do Maranhão (MPMA)
+  financiamento: PIBITI/FAPEMA
+  inicio: 2026
+  stack: [Python, PostgreSQL, Spring Boot, FastAPI, Next.js]
+  responsavel: julio
+  repositorio: mapa-social-do-maranhao
+  url: https://mapasocialma.nucleonara.tech/
+  imagem: projetos/mapasocial.jpeg
+
+- id: vizudata
+  nome: "VizuData: Decisões Inteligentes com Dados"
+  categoria: Inteligência artificial
+  status: em-andamento
+  descricao: Plataforma que transforma arquivos Excel e CSV em dashboards, análises automatizadas e insights em linguagem natural para usuários sem formação técnica.
+  parceiro: null
+  financiamento: null
+  inicio: null
+  stack: [Python, Next.js, Pandas, NumPy]
+  responsavel: julio
+  repositorio: null
+  url: null
+  imagem: projetos/Vizudata.png
+
+- id: educacao-financeira
+  nome: Sistema de Educação Financeira no Maranhão
+  categoria: Educação financeira
+  status: planejado
+  descricao: Sistema para mapear endividamento, vulnerabilidade financeira e indicadores socioeconômicos, transformando dados pesquisados em estatística e aprendizado.
+  parceiro: null
+  financiamento: null
+  inicio: null
+  stack: [ETL, PostgreSQL, React, Business Intelligence]
+  responsavel: null
+  repositorio: null
+  url: null
+  imagem: projetos/financeira.png

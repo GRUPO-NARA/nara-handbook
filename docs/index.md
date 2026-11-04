@@ -1,8 +1,12 @@
-# Bem-vindo ao NARA
+# Bem-vindo ao {{ lab.sigla }}
 
-O **NARA — Núcleo de Análise de Dados e Recursos Analíticos** é uma vertente do Laboratório de Engenharia Aplicada (LEA) da UEMA, formado por discentes de Engenharia da Computação.
+O **{{ lab.sigla }} — {{ lab.nome }}** é uma vertente do {{ lab.laboratorio }} da {{ lab.instituicao }}, formado por discentes de {{ lab.curso }}.
 
 Este handbook é a **fonte única de verdade** do laboratório. Se uma informação aqui estiver diferente do site ou do Drive, vale o que está aqui (e alguém deve corrigir o outro lugar).
+
+| Membros ativos | Projetos em andamento | Pesquisas |
+|:---:|:---:|:---:|
+| **{{ contadores.membros_ativos }}** | **{{ contadores.projetos_andamento }}** | **{{ contadores.pesquisas_total }}** |
 
 ## Por onde começar
 
@@ -10,7 +14,7 @@ Este handbook é a **fonte única de verdade** do laboratório. Se uma informaç
 
 - :material-account-plus: **Acabou de entrar?** Comece pelo [Nivelamento](nivelamento/index.md).
 - :material-account-group: **Quem é quem:** veja [Membros](laboratorio/membros.md).
-- :material-kanban: **Como trabalhamos:** leia [Processo e rituais](laboratorio/processo.md).
+- :material-view-column: **Como trabalhamos:** leia [Processo e rituais](laboratorio/processo.md).
 - :material-flask: **Pesquisa:** conheça as [linhas de pesquisa](pesquisa/index.md).
 
 </div>
@@ -19,8 +23,8 @@ Este handbook é a **fonte única de verdade** do laboratório. Se uma informaç
 
 | Recurso | Link |
 |---|---|
-| Site institucional | <https://site-nara-rho.vercel.app/> |
-| GitHub da organização | <https://github.com/GRUPO-NARA> |
-| Roadmap (GitHub Projects) | <https://github.com/orgs/GRUPO-NARA/projects> |
+| Site institucional | <{{ lab.links.site }}> |
+| GitHub da organização | <{{ lab.links.github }}> |
+| Roadmap (GitHub Projects) | <{{ lab.links.roadmap }}> |
 | Mapa Social do Maranhão | <https://mapasocialma.nucleonara.tech/> |
-| Contato | nara.nucleo@gmail.com |
+| Contato | {{ lab.email }} |

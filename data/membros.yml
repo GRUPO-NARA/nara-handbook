@@ -1,0 +1,98 @@
+# Membros do NARA.
+#
+# Campos:
+#   id        identificador único, minúsculo e sem acento (usado nas referências)
+#   status    ativo | nivelamento | egresso
+#   area      dados | backend | frontend | fullstack | infra
+#   entrada   semestre de entrada, ex.: "2025.1"
+#   foto      caminho da foto no repositório do site
+#   projetos  lista de ids de data/projetos.yml
+#   pesquisas lista de ids de data/pesquisas.yml
+#
+# Campos sem informação ficam como null.
+
+- id: julio
+  nome: Júlio César Costa da Silva
+  funcao: Gestor do grupo, pesquisador e desenvolvedor
+  area: fullstack
+  status: ativo
+  entrada: null
+  github: null
+  linkedin: null
+  foto: equipe/julio.jpeg
+  projetos: [mapa-social, vizudata]
+  pesquisas: [analfabetismo]
+
+- id: ana-elisa
+  nome: Ana Elisa Oliveira Silva
+  funcao: Pesquisadora e desenvolvedora
+  area: fullstack
+  status: ativo
+  entrada: null
+  github: null
+  linkedin: null
+  foto: equipe/ana.jpg
+  projetos: [mapa-social, vizudata]
+  pesquisas: [analfabetismo]
+
+- id: bruno
+  nome: Bruno Raphael Andrade Santos
+  funcao: Pesquisador e desenvolvedor
+  area: backend
+  status: ativo
+  entrada: null
+  github: null
+  linkedin: null
+  foto: equipe/bruno.jpeg
+  projetos: [mapa-social, vizudata]
+  pesquisas: [analfabetismo]
+
+- id: carlos
+  nome: Carlos Vinícius Rodrigues Amorim
+  funcao: Pesquisador e desenvolvedor
+  area: fullstack
+  status: ativo
+  entrada: null
+  github: null
+  linkedin: null
+  foto: equipe/carlos.jpg
+  projetos: [mapa-social, vizudata]
+  pesquisas: [analfabetismo]
+
+- id: luca
+  nome: Luca Maia Marques
+  funcao: Analista de dados
+  area: dados
+  status: ativo
+  entrada: null
+  github: null
+  linkedin: null
+  foto: equipe/luca.jpeg
+  projetos: [vizudata]
+  pesquisas: []
+
+# TODO: completar nome completo, função, área e projetos
+- id: gilberto
+  nome: Gilberto
+  funcao: null
+  area: null
+  status: ativo
+  entrada: null
+  github: null
+  linkedin: null
+  foto: null
+  projetos: []
+  pesquisas: []
+
+# TODO: completar nome completo, função, área e projetos
+- id: andre
+  nome: André
+  funcao: null
+  area: null
+  status: ativo
+  entrada: null
+  github: null
+  linkedin: null
+  foto: null
+  projetos: []
+  pesquisas: []

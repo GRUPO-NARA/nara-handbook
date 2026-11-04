@@ -15,6 +15,22 @@ mkdocs serve
 
 Acesse http://127.0.0.1:8000. As páginas recarregam sozinhas ao salvar.
 
+## Dados do laboratório
+
+Membros, projetos e pesquisas ficam em `data/` e geram as páginas automaticamente:
+
+| Arquivo | O que guarda |
+|---|---|
+| `data/laboratorio.yml` | Nome oficial, contato e links |
+| `data/membros.yml` | Membros e status (ativo, nivelamento, egresso) |
+| `data/projetos.yml` | Projetos de software |
+| `data/pesquisas.yml` | Pesquisas |
+
+Os campos aceitos estão descritos no topo de cada arquivo. Se um id citado não existir ou um status for inválido, o build falha e mostra o erro.
+
+Os mesmos dados são publicados em JSON para o site institucional:
+`/api/laboratorio.json`, `/api/membros.json`, `/api/projetos.json`, `/api/pesquisas.json`.
+
 ## Como contribuir
 
 1. Crie uma branch: `docs/nome-da-mudanca`
