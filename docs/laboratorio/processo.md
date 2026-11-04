@@ -100,4 +100,10 @@ Entregas com data externa (relatórios FAPEMA, entregas ao MPMA, submissão de a
 
     **5. Automações** — *Settings* → *Workflows*: ative **Item closed → Concluído** e **Pull request merged → Concluído**.
 
-    **6. Issue templates** — copie a pasta `.github/` para o repositório `GRUPO-NARA/.github` e ajuste a linha `projects:` com o número do projeto. Os templates valem para todos os repositórios que não tenham templates próprios.
+    **6. Issue templates** — os templates ficam em `templates-organizacao/.github/` neste repositório. Para publicá-los no `GRUPO-NARA/.github`:
+
+    ```bash
+    bash scripts/publicar_templates.sh
+    ```
+
+    Eles valem para todos os repositórios que não tenham templates próprios. Para mudar um template, edite o arquivo aqui e rode o script de novo.

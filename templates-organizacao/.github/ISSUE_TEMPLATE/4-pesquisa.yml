@@ -1,0 +1,33 @@
+name: Atividade de pesquisa
+description: Uma entrega dentro de uma pesquisa do laboratório
+title: "[Pesquisa] "
+labels: ["pesquisa"]
+# Projeto NARA — Roadmap (https://github.com/orgs/GRUPO-NARA/projects/3)
+projects: ["GRUPO-NARA/3"]
+body:
+  - type: dropdown
+    id: etapa
+    attributes:
+      label: Etapa
+      options:
+        - Revisão bibliográfica
+        - Coleta
+        - Tratamento
+        - Análise
+        - Escrita
+        - Submissão
+    validations:
+      required: true
+  - type: textarea
+    id: entrega
+    attributes:
+      label: Entrega esperada
+      description: O que existe quando esta atividade terminar.
+      placeholder: Notebook 03_analise.ipynb com evolução anual por região e três gráficos para o artigo.
+    validations:
+      required: true
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Referências
+      description: Artigos, bases e links (opcional).

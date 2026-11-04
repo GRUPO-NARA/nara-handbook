@@ -35,6 +35,12 @@ python scripts/configurar_github.py --simular
 python scripts/configurar_github.py
 ```
 
+Para publicar os issue templates e o template de PR no repositório `GRUPO-NARA/.github` (origem: `templates-organizacao/.github/`):
+
+```bash
+bash scripts/publicar_templates.sh
+```
+
 Os campos aceitos estão descritos no topo de cada arquivo. Se um id citado não existir ou um status for inválido, o build falha e mostra o erro.
 
 Os mesmos dados são publicados em JSON para o site institucional:

@@ -1,0 +1,30 @@
+name: Funcionalidade ou tarefa
+description: Nova funcionalidade, melhoria ou tarefa técnica
+title: "[Feat] "
+labels: ["funcionalidade"]
+# Projeto NARA — Roadmap (https://github.com/orgs/GRUPO-NARA/projects/3)
+projects: ["GRUPO-NARA/3"]
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: O que precisa ser feito e por quê.
+      placeholder: Como usuário do Mapa Social, quero filtrar indicadores por ano para comparar períodos.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      description: Como saber que está pronto. Uma linha por critério.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas técnicas
+      description: Endpoints, telas, tabelas, links e referências (opcional).

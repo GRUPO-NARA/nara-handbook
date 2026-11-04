@@ -1,0 +1,45 @@
+name: Tarefa de dados
+description: Coleta, ETL, limpeza ou carga de um indicador ou base
+title: "[Dados] "
+labels: ["dados"]
+# Projeto NARA — Roadmap (https://github.com/orgs/GRUPO-NARA/projects/3)
+projects: ["GRUPO-NARA/3"]
+body:
+  - type: input
+    id: indicador
+    attributes:
+      label: Indicador ou base
+      placeholder: Taxa de analfabetismo (15 anos ou mais)
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte
+      description: Nome da fonte e link.
+      placeholder: IPEADATA — http://www.ipeadata.gov.br
+    validations:
+      required: true
+  - type: input
+    id: recorte
+    attributes:
+      label: Recorte
+      description: Nível geográfico e período.
+      placeholder: Municípios do MA, 1991–2022
+    validations:
+      required: true
+  - type: checkboxes
+    id: etapas
+    attributes:
+      label: Etapas
+      options:
+        - label: Coleta
+        - label: Limpeza e padronização
+        - label: Validação (totais, nulos, códigos IBGE)
+        - label: Carga no banco
+        - label: Documentação da fonte
+  - type: textarea
+    id: notas
+    attributes:
+      label: Observações
+      description: Mudanças de metodologia na fonte, anos faltantes etc. (opcional).
