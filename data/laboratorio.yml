@@ -8,7 +8,15 @@ instituicao: UEMA — Universidade Estadual do Maranhão
 curso: Engenharia da Computação
 cidade: São Luís, MA
 fundacao: 2025
+area_principal: Ciência de Dados & Engenharia de Software
 email: nara.nucleo@gmail.com
+
+# Números do site que não dá para calcular a partir dos outros arquivos.
+# Membros e projetos em andamento são calculados automaticamente.
+estatisticas:
+  analises_realizadas: 10
+  clientes_atendidos: 5
+  anos_de_experiencia: 1
 links:
   site: https://site-nara-rho.vercel.app/
   handbook: https://handbook.nucleonara.tech

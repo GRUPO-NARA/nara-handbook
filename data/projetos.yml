@@ -1,48 +1,78 @@
 # Projetos de software do NARA. Pesquisas ficam em data/pesquisas.yml.
 #
 # Campos:
-#   status       planejado | em-andamento | pausado | concluido
-#   responsavel  id de data/membros.yml
-#   repositorio  nome do repositório em GRUPO-NARA (ou null)
+#   categoria        etiqueta do card no site (ex.: Dados públicos)
+#   status           planejado | em-andamento | pausado | concluido
+#   destaque         texto curto ao lado da etiqueta (ex.: "PIBITI/FAPEMA · 2026")
+#   descricao        resumo de uma ou duas frases (card)
+#   objetivo, metodologia, resultados, vinculo   textos do painel de detalhes do site
+#   responsavel      id de data/membros.yml
+#   colaboradores    pessoas de fora do laboratório (orientadores, parceiros)
+#   repositorio      nome do repositório em GRUPO-NARA (ou null)
+#   imagem           caminho na pasta public/ do site
+#   imagem_contida   true para imagens que precisam de mais margem no card
+#
+# A equipe de cada projeto vem de data/membros.yml (campo projetos) + colaboradores.
 
 - id: mapa-social
   nome: Mapa Social do Maranhão
   categoria: Dados públicos
   status: em-andamento
+  destaque: PIBITI/FAPEMA · 2026
   descricao: Plataforma web de código aberto que integra e visualiza indicadores sociais dos 217 municípios maranhenses para apoiar políticas públicas e ampliar o acesso à informação.
+  objetivo: Integrar dados públicos de diferentes setores sociais em uma ferramenta interativa, acessível à população e capaz de apoiar a tomada de decisões de gestores públicos e do Ministério Público do Estado do Maranhão.
+  metodologia: Um pipeline assíncrono de ETL em Python e Pandas coleta e padroniza dados do SIDRA, SAGICAD, IMESC e IPEADATA. Os indicadores são armazenados em PostgreSQL, disponibilizados por uma API REST em Spring Boot e analisados por um serviço FastAPI com modelos de aprendizado de máquina. A interface foi desenvolvida em Next.js.
+  resultados: A plataforma consolidou 48 séries de indicadores, contempla os 217 municípios do Maranhão e permite consultar séries históricas, gerar projeções e agrupar municípios com perfis semelhantes. A coleta assíncrona reduziu o tempo observado de processamento de cerca de dez para aproximadamente dois minutos no ambiente do projeto.
+  vinculo: UEMA · LEA · PIBITI/FAPEMA · Ministério Público do Estado do Maranhão
   parceiro: Ministério Público do Maranhão (MPMA)
   financiamento: PIBITI/FAPEMA
   inicio: 2026
-  stack: [Python, PostgreSQL, Spring Boot, FastAPI, Next.js]
+  stack: [Python, PostgreSQL, Spring Boot, FastAPI, Next.js, Scikit-learn]
   responsavel: julio
+  colaboradores: [Paulo Fernandes da Silva Junior]
   repositorio: mapa-social-do-maranhao
   url: https://mapasocialma.nucleonara.tech/
   imagem: projetos/mapasocial.jpeg
+  imagem_contida: false
 
 - id: vizudata
   nome: "VizuData: Decisões Inteligentes com Dados"
   categoria: Inteligência artificial
   status: em-andamento
-  descricao: Plataforma que transforma arquivos Excel e CSV em dashboards, análises automatizadas e insights em linguagem natural para usuários sem formação técnica.
+  destaque: PROTÓTIPO · TRL 3–4
+  descricao: Plataforma inteligente que transforma arquivos Excel e CSV em dashboards, análises automatizadas e insights em linguagem natural para usuários sem formação técnica.
+  objetivo: Democratizar o acesso à análise de dados para micro e pequenas empresas, instituições públicas, organizações do terceiro setor e empreendedores que não possuem equipes técnicas especializadas.
+  metodologia: O usuário envia dados em formatos Excel ou CSV e seleciona análises descritivas, diagnósticas ou preditivas. O sistema processa os dados, gera gráficos, dashboards e indicadores e utiliza um agente de inteligência artificial para produzir interpretações e recomendações em linguagem natural.
+  resultados: A proposta prevê uma interface acessível, exportação de relatórios em PDF, uso individual ou corporativo e integração futura com sistemas externos. A solução está em validação conceitual e desenvolvimento de protótipo, com evolução planejada para um MVP funcional.
+  vinculo: UEMA · Synapse Lab · Laboratório de Engenharia Aplicada · Incubadora MARANDU
   parceiro: null
   financiamento: null
   inicio: null
-  stack: [Python, Next.js, Pandas, NumPy]
+  stack: [Python, Next.js, Pandas, NumPy, Agentes de IA]
   responsavel: julio
+  colaboradores: []
   repositorio: null
   url: null
   imagem: projetos/Vizudata.png
+  imagem_contida: false
 
 - id: educacao-financeira
   nome: Sistema de Educação Financeira no Maranhão
   categoria: Educação financeira
   status: planejado
+  destaque: PESQUISA
   descricao: Sistema para mapear endividamento, vulnerabilidade financeira e indicadores socioeconômicos, transformando dados pesquisados em estatística e aprendizado.
+  objetivo: Desenvolver um sistema de análise de dados sobre educação financeira no Estado do Maranhão, realizando pesquisa em tempo real, avaliando e comparando o nível de conhecimento por meio de um sistema de TRI e adição de dicas para a melhoria do conhecimento na área de educação financeira.
+  metodologia: A pesquisa combina ciclos de desenvolvimento de software com um pipeline de extração, transformação e carga de bases públicas e institucionais. A arquitetura prevê banco de dados relacional, back-end seguro, front-end analítico, dashboards e técnicas descritivas, preditivas e de agrupamento.
+  resultados: Espera-se produzir um protótipo funcional para acompanhar indicadores de endividamento e consumo, apoiar a alocação de recursos em programas de capacitação financeira e monitorar o impacto de políticas implementadas no território maranhense.
+  vinculo: UEMA · Programa Institucional de Bolsas de Iniciação Científica · ODS 4, 8, 9 e 10
   parceiro: null
   financiamento: null
   inicio: null
-  stack: [ETL, PostgreSQL, React, Business Intelligence]
+  stack: [ETL, PostgreSQL, React, Business Intelligence, Machine Learning]
   responsavel: null
+  colaboradores: []
   repositorio: null
   url: null
   imagem: projetos/financeira.png
+  imagem_contida: true

@@ -156,11 +156,61 @@ def define_env(env):
         return valor
 
 
+def _dados_site():
+    """
+    Monta o JSON consumido pelo site institucional, já com as relações resolvidas:
+    equipe de cada projeto/pesquisa, nomes dos projetos de cada membro e contadores.
+    """
+    lab = _load("laboratorio")
+    membros = _load("membros")
+    projetos = _load("projetos")
+    pesquisas = _load("pesquisas")
+
+    nome_projeto = {p["id"]: p["nome"] for p in projetos}
+    nome_pesquisa = {p["id"]: p["nome"] for p in pesquisas}
+    ativos = [m for m in membros if m["status"] == "ativo"]
+
+    def equipe(campo, id_, item):
+        nomes = [m["nome"] for m in ativos if id_ in (m.get(campo) or [])]
+        return nomes + list(item.get("colaboradores") or [])
+
+    return {
+        "laboratorio": lab,
+        "contadores": {
+            "membros_ativos": len(ativos),
+            "em_nivelamento": sum(m["status"] == "nivelamento" for m in membros),
+            "projetos_andamento": sum(p["status"] == "em-andamento" for p in projetos),
+            "projetos_planejados": sum(p["status"] == "planejado" for p in projetos),
+            "projetos_concluidos": sum(p["status"] == "concluido" for p in projetos),
+            "pesquisas_andamento": sum(p["status"] == "em-andamento" for p in pesquisas),
+            "pesquisas_planejadas": sum(p["status"] == "planejada" for p in pesquisas),
+            "pesquisas_concluidas": sum(p["status"] == "concluida" for p in pesquisas),
+        },
+        "membros": [
+            {
+                **m,
+                "projetos_nomes": [nome_projeto[i] for i in m.get("projetos") or []]
+                + [nome_pesquisa[i] for i in m.get("pesquisas") or []],
+            }
+            for m in ativos
+        ],
+        "projetos": [{**p, "equipe": equipe("projetos", p["id"], p)} for p in projetos],
+        "pesquisas": [{**p, "equipe": equipe("pesquisas", p["id"], p)} for p in pesquisas],
+    }
+
+
 def on_post_build(env):
-    """Exporta os dados em JSON para o site institucional: /api/<nome>.json"""
+    """
+    Exporta os dados em JSON:
+      /api/<nome>.json  cópia de cada arquivo de data/
+      /api/site.json    tudo junto e resolvido, para o site institucional
+    """
     destino = Path(env.conf["site_dir"]) / "api"
     destino.mkdir(parents=True, exist_ok=True)
     for nome in ("laboratorio", "membros", "projetos", "pesquisas"):
         (destino / f"{nome}.json").write_text(
             json.dumps(_load(nome), ensure_ascii=False, indent=2), encoding="utf-8"
         )
+    (destino / "site.json").write_text(
+        json.dumps(_dados_site(), ensure_ascii=False, indent=2), encoding="utf-8"
+    )

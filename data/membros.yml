@@ -1,90 +1,107 @@
 # Membros do NARA.
 #
 # Campos:
-#   id        identificador único, minúsculo e sem acento (usado nas referências)
-#   status    ativo | nivelamento | egresso
-#   area      dados | backend | frontend | fullstack | infra
-#   foto      caminho da foto no repositório do site
-#   projetos  lista de ids de data/projetos.yml
-#   pesquisas lista de ids de data/pesquisas.yml
+#   id            identificador único, minúsculo e sem acento (usado nas referências)
+#   funcao        papel no laboratório (aparece em maiúsculas no site)
+#   perfil        especialidade, mostrada como etiqueta no site
+#   area          dados | backend | frontend | fullstack | infra
+#   status        ativo | nivelamento | egresso
+#   foto          caminho da foto na pasta public/ do site (ex.: equipe/julio.jpeg)
+#   posicao_foto  enquadramento da foto no card (CSS object-position, ex.: "50% 60%")
+#   projetos      lista de ids de data/projetos.yml
+#   pesquisas     lista de ids de data/pesquisas.yml
 #
 # Campos sem informação ficam como null.
 
 - id: julio
   nome: Júlio César Costa da Silva
-  funcao: Gestor do grupo, pesquisador e desenvolvedor
+  funcao: Pesquisador, desenvolvedor e gestor do grupo
+  perfil: Analista de Dados e Desenvolvimento Full Stack
   area: fullstack
   status: ativo
-  github: null
+  github: CapJul
   linkedin: null
   foto: equipe/julio.jpeg
-  projetos: [mapa-social, vizudata]
+  posicao_foto: "50% 50%"
+  projetos: [mapa-social, vizudata, educacao-financeira]
   pesquisas: [analfabetismo]
 
 - id: ana-elisa
   nome: Ana Elisa Oliveira Silva
   funcao: Pesquisadora e desenvolvedora
+  perfil: Analista de Dados e Desenvolvimento Full Stack
   area: fullstack
   status: ativo
   github: null
   linkedin: null
   foto: equipe/ana.jpg
-  projetos: [mapa-social, vizudata]
+  posicao_foto: "100% 100%"
+  projetos: [mapa-social, vizudata, educacao-financeira]
   pesquisas: [analfabetismo]
 
 - id: bruno
   nome: Bruno Raphael Andrade Santos
   funcao: Pesquisador e desenvolvedor
+  perfil: Analista de Dados e Desenvolvimento Back-end
   area: backend
   status: ativo
   github: null
   linkedin: null
   foto: equipe/bruno.jpeg
-  projetos: [mapa-social, vizudata]
+  posicao_foto: "50% 60%"
+  projetos: [mapa-social, vizudata, educacao-financeira]
   pesquisas: [analfabetismo]
 
 - id: carlos
   nome: Carlos Vinícius Rodrigues Amorim
   funcao: Pesquisador e desenvolvedor
+  perfil: Analista de Dados e Desenvolvimento Full Stack
   area: fullstack
   status: ativo
   github: null
   linkedin: null
   foto: equipe/carlos.jpg
-  projetos: [mapa-social, vizudata]
+  posicao_foto: "50% 70%"
+  projetos: [mapa-social, vizudata, educacao-financeira]
   pesquisas: [analfabetismo]
 
 - id: luca
   nome: Luca Maia Marques
   funcao: Analista de dados
+  perfil: Analista de Dados
   area: dados
   status: ativo
   github: null
   linkedin: null
   foto: equipe/luca.jpeg
+  posicao_foto: "50% 50%"
   projetos: [vizudata]
   pesquisas: []
 
-# TODO: completar nome completo, função, área e projetos
+# TODO: completar nome completo, função, perfil, área, projetos e foto
 - id: gilberto
   nome: Gilberto
   funcao: null
+  perfil: null
   area: null
   status: ativo
   github: null
   linkedin: null
   foto: null
+  posicao_foto: null
   projetos: []
   pesquisas: []
 
-# TODO: completar nome completo, função, área e projetos
+# TODO: completar nome completo, função, perfil, área, projetos e foto
 - id: andre
   nome: André
   funcao: null
+  perfil: null
   area: null
   status: ativo
   github: null
   linkedin: null
   foto: null
+  posicao_foto: null
   projetos: []
   pesquisas: []

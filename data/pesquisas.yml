@@ -1,38 +1,57 @@
 # Pesquisas do NARA.
 #
 # Campos:
-#   status     planejada | em-andamento | concluida
-#   etapa      revisao | coleta | tratamento | analise | escrita | submissao | publicada
-#   membros    lista de ids de data/membros.yml
-#   resultados prêmios, artigos, apresentações
+#   status       planejada | em-andamento | concluida
+#   etapa        revisao | coleta | tratamento | analise | escrita | submissao | publicada
+#   categoria, destaque, descricao, objetivo, metodologia, resultados_texto, vinculo, imagem
+#                textos do site (mesmo formato de data/projetos.yml)
+#   membros      lista de ids de data/membros.yml
+#   colaboradores pessoas de fora do laboratório
+#   resultados   lista curta de conquistas (prêmios, artigos, apresentações)
 
 - id: analfabetismo
   nome: Analfabetismo nos Municípios do Maranhão
+  categoria: Análise de dados
   status: concluida
   etapa: publicada
+  destaque: SEAD UFMA · 2025
   descricao: Estudo dos indicadores de analfabetismo entre 1991 e 2022, com visualizações comparativas e dashboard interativo para identificar padrões e diferenças regionais.
+  objetivo: Analisar a evolução das taxas de analfabetismo nos municípios maranhenses e organizar os dados de forma que pesquisadores e gestores possam reconhecer tendências regionais e apoiar a formulação de políticas educacionais.
+  metodologia: Os dados da plataforma IPEADATA foram limpos, organizados e processados em Python com Pandas. Matplotlib e Seaborn foram utilizados nas análises estatísticas e visualizações, enquanto o Streamlit permitiu disponibilizar os resultados em um dashboard interativo.
+  resultados_texto: O estudo evidenciou a redução do analfabetismo no período analisado, além de diferenças relevantes entre municípios. O tratamento dos dados e as visualizações formaram uma base consistente para novas análises e para o acompanhamento de indicadores sociais.
+  vinculo: UEMA · Trabalho apresentado na 18ª Semana Acadêmica de Administração da UFMA
   periodo: 1991–2022
   fontes: [IPEADATA]
-  stack: [Python, Pandas, Matplotlib, Seaborn]
+  stack: [Python, Pandas, Matplotlib, Seaborn, Streamlit]
   orientador: null
   membros: [julio, ana-elisa, bruno, carlos]
+  colaboradores: [Samyra de Araujo Lobo Silva]
   resultados:
     - Premiação de destaque na XVIII Semana de Administração da UFMA (SEAD 2025)
   repositorio: null
   pagina: pesquisa/analfabetismo.md
   imagem: projetos/sead.jpeg
+  imagem_contida: false
 
 - id: feminicidio
   nome: Feminicídio no Maranhão
+  categoria: Segurança pública
   status: planejada
   etapa: revisao
+  destaque: PLANEJADA
   descricao: Análise da evolução dos casos de feminicídio no Maranhão, cruzando dados de segurança pública e de saúde.
+  objetivo: null
+  metodologia: null
+  resultados_texto: null
+  vinculo: UEMA · LEA · NARA
   periodo: null
   fontes: [SSP-MA, Anuário Brasileiro de Segurança Pública, SIM/DataSUS]
   stack: [Python, Pandas, Streamlit]
   orientador: null
   membros: []
+  colaboradores: []
   resultados: []
   repositorio: null
   pagina: pesquisa/feminicidio.md
   imagem: null
+  imagem_contida: false
