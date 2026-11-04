@@ -56,7 +56,7 @@ flowchart LR
 | **Kanban** | Board | Colunas por Status | O que está acontecendo agora? |
 | **Roadmap** | Roadmap | Datas: Início → Data alvo, agrupado por Projeto | O que entrega quando? |
 | **Por pessoa** | Tabela | Agrupado por Assignees, filtro `-status:Concluído` | Quem está com o quê? |
-| **Sprint atual** | Board | Filtro `iteration:@current` | O que fecha nesta sprint? |
+| **Sprint atual** | Board | Filtro `iteração:@current` | O que fecha nesta sprint? |
 | **Pesquisa** | Board | Filtro `tipo:Pesquisa`, colunas por Etapa da pesquisa | Em que fase está cada pesquisa? |
 
 ## Prazos
