@@ -1,6 +1,6 @@
 # Pesquisa
 
-A área de pesquisa do NARA produz estudos com dados públicos sobre o Maranhão. Cada pesquisa tem repositório próprio, criado a partir do `template-pesquisa`.
+A área de pesquisa do NARA produz estudos com dados públicos sobre o Maranhão. Cada pesquisa tem repositório próprio, criado a partir do [template-pesquisa](https://github.com/GRUPO-NARA/template-pesquisa).
 
 Antes de começar uma pesquisa nova, leia o [protocolo de pesquisa](protocolo.md).
 
