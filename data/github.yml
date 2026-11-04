@@ -44,6 +44,7 @@ labels:
   - { nome: pesquisa, cor: 5319e7, descricao: "Atividade de pesquisa" }
   - { nome: docs, cor: 0075ca, descricao: "Documentação" }
   - { nome: infra, cor: fbca04, descricao: "Deploy, VPS, Coolify, Docker" }
+  - { nome: nivelamento, cor: bfd4f2, descricao: "Acompanhamento de novo membro" }
   - { nome: good first issue, cor: 7057ff, descricao: "Boa para quem acabou de sair do nivelamento" }
   - { nome: bloqueado, cor: b60205, descricao: "Depende de algo externo para continuar" }
   - { nome: precisa de ajuda, cor: 008672, descricao: "O responsável pediu apoio" }

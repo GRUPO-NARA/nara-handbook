@@ -1,0 +1,67 @@
+name: Nivelamento
+description: Acompanhamento de um novo membro (abrir no repositório nara-handbook)
+title: "[Nivelamento] Nome do novato"
+labels: ["nivelamento"]
+# Projeto NARA — Roadmap (https://github.com/orgs/GRUPO-NARA/projects/3)
+projects: ["GRUPO-NARA/3"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Guia completo: https://handbook.nucleonara.tech/nivelamento/
+        Atribua a issue ao novato (Assignees) e mencione o padrinho abaixo.
+  - type: input
+    id: github
+    attributes:
+      label: Usuário do GitHub do novato
+      placeholder: "@usuario"
+    validations:
+      required: true
+  - type: input
+    id: padrinho
+    attributes:
+      label: Padrinho/madrinha
+      placeholder: "@usuario-do-veterano"
+    validations:
+      required: true
+  - type: input
+    id: inicio
+    attributes:
+      label: Data de início
+      placeholder: AAAA-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      description: O novato marca os itens conforme avança.
+      value: |
+        ### Entrada
+        - [ ] Entrou na organização GRUPO-NARA no GitHub
+        - [ ] Recebeu acesso à pasta do Drive
+        - [ ] Leu o handbook (Início, Membros, Processo)
+
+        ### Módulo 1 — Python e análise de dados
+        - [ ] Assistiu às 10 aulas da playlist
+        - [ ] Rodou os exemplos do minicurso-python
+        - [ ] NumPy
+        - [ ] Pandas
+        - [ ] Tratamento de dados
+        - [ ] Rodou e modificou o dashboard em Streamlit
+        - [ ] **Aprovado no módulo 1** em: AAAA-MM-DD (o prazo do módulo 2 começa aqui)
+
+        ### Módulo 2 — Projeto FastAPI + Next.js (prazo: 1 mês)
+        - [ ] Base de dados escolhida:
+        - [ ] Repositório criado:
+        - [ ] Backend em FastAPI fornecendo os dados
+        - [ ] Frontend em Next.js consumindo o backend
+        - [ ] README explicando o projeto e como rodar
+        - [ ] Apresentação marcada para: AAAA-MM-DD
+        - [ ] **Aprovado no módulo 2** em: AAAA-MM-DD
+
+        ### Saída
+        - [ ] Status alterado para `ativo` em data/membros.yml
+        - [ ] Entrou num time e recebeu a primeira issue
+    validations:
+      required: true

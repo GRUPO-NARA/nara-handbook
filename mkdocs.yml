@@ -48,7 +48,10 @@ nav:
       - Stack: laboratorio/stack.md
       - Processo e rituais: laboratorio/processo.md
       - Infraestrutura: laboratorio/infra.md
-  - Nivelamento: nivelamento/index.md
+  - Nivelamento:
+      - nivelamento/index.md
+      - Módulo 1 — Python e dados: nivelamento/modulo-1.md
+      - Módulo 2 — Projeto: nivelamento/modulo-2.md
   - Projetos: projetos/index.md
   - Pesquisa:
       - pesquisa/index.md
