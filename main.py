@@ -40,6 +40,8 @@ AREAS = {
     "frontend": "Front-end",
     "fullstack": "Full Stack",
     "infra": "Infraestrutura",
+    "pesquisa": "Pesquisa",
+    "cybersecurity": "Cibersegurança",
 }
 
 

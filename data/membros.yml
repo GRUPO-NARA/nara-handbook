@@ -4,7 +4,7 @@
 #   id            identificador único, minúsculo e sem acento (usado nas referências)
 #   funcao        papel no laboratório (aparece em maiúsculas no site)
 #   perfil        especialidade, mostrada como etiqueta no site
-#   area          dados | backend | frontend | fullstack | infra
+#   area          dados | backend | frontend | fullstack | infra | pesquisa | cybersecurity
 #   status        ativo | nivelamento | egresso
 #   foto          caminho da foto na pasta public/ do site (ex.: equipe/julio.jpeg)
 #   posicao_foto  enquadramento da foto no card (CSS object-position, ex.: "50% 60%")
@@ -78,7 +78,7 @@
   projetos: [vizudata]
   pesquisas: []
 
-# TODO: completar nome completo, função, perfil, área, projetos e foto
+# TODO: completar nome completo e projetos
 - id: gilberto
   nome: Gilberto
   funcao: Desenvolvedor
@@ -92,7 +92,7 @@
   projetos: []
   pesquisas: []
 
-# TODO: completar nome completo, função, perfil, área, projetos e foto
+# TODO: completar nome completo e projetos
 - id: andre
   nome: André
   funcao: Pesquisador
@@ -106,6 +106,7 @@
   projetos: []
   pesquisas: []
 
+# TODO: completar projetos
 - id: pedro
   nome: Pedro Fernandes
   funcao: Desenvolvedor
@@ -118,4 +119,3 @@
   posicao_foto: "50% 50%"
   projetos: []
   pesquisas: []
-  
