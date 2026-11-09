@@ -81,27 +81,41 @@
 # TODO: completar nome completo, função, perfil, área, projetos e foto
 - id: gilberto
   nome: Gilberto
-  funcao: null
-  perfil: null
-  area: null
+  funcao: Desenvolvedor
+  perfil: Desenvolvedor Back-end
+  area: backend
   status: ativo
   github: null
   linkedin: null
-  foto: null
-  posicao_foto: null
+  foto: equipe/gilberto.jpeg
+  posicao_foto: "50% 50%"
   projetos: []
   pesquisas: []
 
 # TODO: completar nome completo, função, perfil, área, projetos e foto
 - id: andre
   nome: André
-  funcao: null
-  perfil: null
-  area: null
+  funcao: Pesquisador
+  perfil: Pesquisador de Dados e Aprendizagem de Máquina
+  area: pesquisa
   status: ativo
   github: null
   linkedin: null
-  foto: null
-  posicao_foto: null
+  foto: equipe/andre.jpeg
+  posicao_foto: "50% 50%"
   projetos: []
   pesquisas: []
+
+- id: pedro
+  nome: Pedro Fernandes
+  funcao: Desenvolvedor
+  perfil: Cybersecurity e Desenvolvimento Back-end
+  area: cybersecurity
+  status: ativo
+  github: null
+  linkedin: null
+  foto: equipe/pedro.jpeg
+  posicao_foto: "50% 50%"
+  projetos: []
+  pesquisas: []
+  
