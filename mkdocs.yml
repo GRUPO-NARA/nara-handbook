@@ -45,6 +45,7 @@ nav:
   - Início: index.md
   - Laboratório:
       - Membros: laboratorio/membros.md
+      - Áreas de especialidade: laboratorio/areas.md
       - Stack: laboratorio/stack.md
       - Processo e rituais: laboratorio/processo.md
       - Infraestrutura: laboratorio/infra.md

@@ -42,7 +42,7 @@ flowchart LR
 | **Status** | Coluna do Kanban |
 | **Projeto** | Qual projeto ou pesquisa (as opções vêm de `data/`) |
 | **Tipo** | Software, Pesquisa ou Gestão |
-| **Área** | Front-end, Back-end, Dados/ETL, Infra, Docs, Pesquisa |
+| **Área** | Uma das 7 [áreas de especialidade](areas.md): Coordenação e Arquitetura, Pesquisa e Análise, Back-end, Front-end, Aprendizado de Máquina, Engenharia de Dados, Infraestrutura e Segurança |
 | **Prioridade** | Alta, Média, Baixa |
 | **Etapa da pesquisa** | Só para issues de pesquisa |
 | **Iteração** | Sprint de 2 semanas |

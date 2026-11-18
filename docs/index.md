@@ -14,6 +14,7 @@ Este handbook é a **fonte única de verdade** do laboratório. Se uma informaç
 
 - :material-account-plus: **Acabou de entrar?** Comece pelo [Nivelamento](nivelamento/index.md).
 - :material-account-group: **Quem é quem:** veja [Membros](laboratorio/membros.md).
+- :material-sitemap: **Áreas:** veja as [áreas de especialidade](laboratorio/areas.md) e o roadmap de cada uma.
 - :material-view-column: **Como trabalhamos:** leia [Processo e rituais](laboratorio/processo.md).
 - :material-flask: **Pesquisa:** conheça as [linhas de pesquisa](pesquisa/index.md).
 
