@@ -4,6 +4,9 @@ A área de pesquisa do NARA produz estudos com dados públicos sobre o Maranhão
 
 Antes de começar uma pesquisa nova, leia o [protocolo de pesquisa](protocolo.md).
 
+!!! info "Evento das pesquisas"
+    O evento das pesquisas é organizado pelo [Observatório da SEDIHPOP-MA]({{ lab.links.evento_pesquisas }}). Acompanhe por lá as datas, as chamadas e as regras de submissão.
+
 !!! tip "Como atualizar"
     Esta tabela é gerada a partir de `data/pesquisas.yml`.
 

@@ -35,13 +35,13 @@ ETAPAS = {
     "publicada": "Publicada",
 }
 AREAS = {
-    "dados": "Dados",
+    "coordenacao": "Coordenação e Arquitetura",
+    "pesquisa": "Pesquisa e Análise",
     "backend": "Back-end",
     "frontend": "Front-end",
-    "fullstack": "Full Stack",
-    "infra": "Infraestrutura",
-    "pesquisa": "Pesquisa",
-    "cybersecurity": "Cibersegurança",
+    "machine-learning": "Aprendizado de Máquina",
+    "engenharia-de-dados": "Engenharia de Dados",
+    "infra-seguranca": "Infraestrutura e Segurança",
 }
 
 

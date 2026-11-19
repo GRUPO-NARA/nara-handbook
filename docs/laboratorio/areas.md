@@ -86,7 +86,7 @@ Cada ficha diz o que faz quem é selecionado para a área, o que precisa estudar
     - diagramas de arquitetura e de sequência;
     - critérios de escolha de stack;
     - revisão de arquitetura.
-- **Como ajuda no projeto:** escreve o documento de arquitetura, define o formato dos arquivos de cenário e o contrato da API do Pixel Lab, e decide a ordem das entregas.
+- **Como ajuda no projeto:** escreve o documento de arquitetura de cada projeto, define o contrato entre front-end, back-end e serviços de dados, e decide a ordem das entregas.
 - **No GitHub:** time `coordenacao`, etiqueta `área: coordenação`.
 
 ### Pesquisa e Análise
@@ -96,7 +96,7 @@ Cada ficha diz o que faz quem é selecionado para a área, o que precisa estudar
     - estatística descritiva, Python e pandas;
     - fontes públicas de dados e o [protocolo de pesquisa](../pesquisa/protocolo.md);
     - escrita científica.
-- **Como ajuda no projeto:** define as perguntas e os indicadores que os sistemas mostram, confere os números e escreve artigos e apresentações. No Pixel Lab, escreve as salas da trilha de Pesquisa.
+- **Como ajuda no projeto:** define as perguntas e os indicadores que os sistemas mostram, confere os números e escreve artigos e apresentações.
 - **No GitHub:** time `pesquisa`, etiqueta `área: pesquisa`.
 
 ### Back-end
@@ -107,7 +107,7 @@ Cada ficha diz o que faz quem é selecionado para a área, o que precisa estudar
     - Spring Boot (Controller, Service, Repository, REST);
     - PostgreSQL, validação, tratamento de erros e MockMvc;
     - Spring Security, cache e OpenAPI.
-- **Como ajuda no projeto:** constrói as rotas de trilhas, cenários e simulação do Pixel Lab e escreve as salas da trilha de Back-end.
+- **Como ajuda no projeto:** constrói e mantém as APIs Spring Boot dos projetos, como a API do Mapa Social, com testes e documentação OpenAPI.
 - **No GitHub:** time `backend`, etiqueta `área: back-end`.
 
 ### Front-end
@@ -118,7 +118,7 @@ Cada ficha diz o que faz quem é selecionado para a área, o que precisa estudar
     - React e TypeScript;
     - Next.js App Router consumindo uma API;
     - visualização de dados, acessibilidade e Playwright.
-- **Como ajuda no projeto:** constrói o Mapa das trilhas e a sala genérica do Pixel Lab, que desenha qualquer cenário a partir do arquivo dele.
+- **Como ajuda no projeto:** constrói as telas dos projetos, como os mapas e painéis do Mapa Social, consumindo as APIs do back-end.
 - **No GitHub:** time `frontend`, etiqueta `área: front-end`.
 
 ### Aprendizado de Máquina
@@ -129,7 +129,7 @@ Cada ficha diz o que faz quem é selecionado para a área, o que precisa estudar
     - scikit-learn;
     - avaliação e validação de modelos;
     - FastAPI para servir modelos.
-- **Como ajuda no projeto:** mantém os modelos do VizuData e a API Python do Mapa Social. No Pixel Lab, escreve as salas da trilha de Aprendizado de Máquina.
+- **Como ajuda no projeto:** mantém os modelos do VizuData e a API Python do Mapa Social.
 - **No GitHub:** time `machine-learning`, etiqueta `área: aprendizado de máquina`.
 
 ### Engenharia de Dados
@@ -140,7 +140,7 @@ Cada ficha diz o que faz quem é selecionado para a área, o que precisa estudar
     - PostgreSQL (chaves, índices, consultas);
     - pipelines ETL com pandas e SQLAlchemy;
     - carga sem interrupção e agendamento.
-- **Como ajuda no projeto:** mantém o pipeline do Mapa Social. No Pixel Lab, modela o banco de progresso da fase 2.
+- **Como ajuda no projeto:** mantém o pipeline do Mapa Social e modela os bancos PostgreSQL dos projetos.
 - **No GitHub:** time `engenharia-de-dados`, etiqueta `área: engenharia de dados`.
 
 ### Infraestrutura e Segurança
@@ -151,7 +151,7 @@ Cada ficha diz o que faz quem é selecionado para a área, o que precisa estudar
     - Docker e Docker Compose;
     - GitHub Actions e Coolify;
     - OWASP Top 10, gestão de segredos e monitoramento.
-- **Como ajuda no projeto:** monta a CI, os Dockerfiles e o deploy do Pixel Lab no Coolify, e revisa a segurança de todos os projetos.
+- **Como ajuda no projeto:** monta a CI, os Dockerfiles e o deploy dos projetos no Coolify, e revisa a segurança de todos eles.
 - **No GitHub:** time `infra-seguranca`, etiqueta `área: infra e segurança`.
 
 ## Segmentação no GitHub

@@ -4,7 +4,9 @@
 #   id            identificador único, minúsculo e sem acento (usado nas referências)
 #   funcao        papel no laboratório (aparece em maiúsculas no site)
 #   perfil        especialidade, mostrada como etiqueta no site
-#   area          dados | backend | frontend | fullstack | infra | pesquisa | cybersecurity
+#   area          área de especialidade (docs/laboratorio/areas.md): coordenacao | pesquisa |
+#                 backend | frontend | machine-learning | engenharia-de-dados | infra-seguranca
+#   github        usuário do GitHub, sem o endereço completo
 #   status        ativo | nivelamento | egresso
 #   foto          caminho da foto na pasta public/ do site (ex.: equipe/julio.jpeg)
 #   posicao_foto  enquadramento da foto no card (CSS object-position, ex.: "50% 60%")
@@ -17,7 +19,7 @@
   nome: Júlio César Costa da Silva
   funcao: Pesquisador, desenvolvedor e gestor do grupo
   perfil: Analista de Dados e Desenvolvimento Full Stack
-  area: fullstack
+  area: coordenacao
   status: ativo
   github: CapJul
   linkedin: null
@@ -30,9 +32,9 @@
   nome: Ana Elisa Oliveira Silva
   funcao: Pesquisadora e desenvolvedora
   perfil: Analista de Dados e Desenvolvimento Full Stack
-  area: fullstack
+  area: frontend
   status: ativo
-  github: null
+  github: elisasilva06
   linkedin: null
   foto: equipe/ana.jpg
   posicao_foto: "100% 100%"
@@ -45,7 +47,7 @@
   perfil: Analista de Dados e Desenvolvimento Back-end
   area: backend
   status: ativo
-  github: null
+  github: BrunoAndrade-dev
   linkedin: null
   foto: equipe/bruno.jpeg
   posicao_foto: "50% 60%"
@@ -56,9 +58,9 @@
   nome: Carlos Vinícius Rodrigues Amorim
   funcao: Pesquisador e desenvolvedor
   perfil: Analista de Dados e Desenvolvimento Full Stack
-  area: fullstack
+  area: engenharia-de-dados
   status: ativo
-  github: null
+  github: amorimcarlos
   linkedin: null
   foto: equipe/carlos.jpg
   posicao_foto: "50% 70%"
@@ -69,7 +71,7 @@
   nome: Luca Maia Marques
   funcao: Analista de dados
   perfil: Analista de Dados
-  area: dados
+  area: pesquisa
   status: ativo
   github: null
   linkedin: null
@@ -85,7 +87,7 @@
   perfil: Desenvolvedor Back-end
   area: backend
   status: ativo
-  github: null
+  github: gilbertoramos1204
   linkedin: null
   foto: equipe/gilberto.jpeg
   posicao_foto: "50% 50%"
@@ -97,9 +99,9 @@
   nome: André
   funcao: Pesquisador
   perfil: Pesquisador de Dados e Aprendizagem de Máquina
-  area: pesquisa
+  area: machine-learning
   status: ativo
-  github: null
+  github: Andre1234calac
   linkedin: null
   foto: equipe/andre.jpeg
   posicao_foto: "50% 50%"
@@ -111,9 +113,9 @@
   nome: Pedro Fernandes
   funcao: Desenvolvedor
   perfil: Cybersecurity e Desenvolvimento Back-end
-  area: cybersecurity
+  area: infra-seguranca
   status: ativo
-  github: null
+  github: f3rnandesov
   linkedin: null
   foto: equipe/pedro.jpeg
   posicao_foto: "50% 50%"
