@@ -23,7 +23,6 @@
   periodo: 1991–2022
   fontes: [IPEADATA]
   stack: [Python, Pandas, Matplotlib, Seaborn, Streamlit]
-  orientador: null
   membros: [julio, ana-elisa, bruno, carlos]
   colaboradores: [Samyra de Araujo Lobo Silva]
   resultados:
@@ -47,7 +46,6 @@
   periodo: null
   fontes: [SSP-MA, Anuário Brasileiro de Segurança Pública, SIM/DataSUS]
   stack: [Python, Pandas, Streamlit]
-  orientador: null
   membros: []
   colaboradores: []
   resultados: []

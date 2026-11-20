@@ -18,8 +18,7 @@ Antes de criar qualquer coisa, a ideia é apresentada na **revisão mensal** de 
 
 - a pergunta de pesquisa, em uma frase;
 - as fontes de dados que parecem existir;
-- quem vai participar;
-- um(a) **orientador(a)** que aceitou acompanhar.
+- quem vai participar.
 
 Aprovada, a pesquisa entra em `data/pesquisas.yml` com `status: planejada`.
 
@@ -64,7 +63,7 @@ O template já traz:
     Usamos **somente dados públicos e agregados**. Nenhum resultado, tabela ou gráfico pode permitir identificar uma pessoa.
 
 - **Contagens baixas:** em municípios pequenos, poucos casos podem identificar alguém. Agregue por região (por exemplo, as regiões de planejamento do IMESC) ou suprima o valor.
-- **Temas sensíveis** (violência, saúde, vulnerabilidade): o recorte e as agregações são validados pelo(a) orientador(a) **antes da coleta**, e a validação é registrada no `metodologia.md`.
+- **Temas sensíveis** (violência, saúde, vulnerabilidade): o recorte e as agregações são validados pela equipe da pesquisa **antes da coleta**, e a validação é registrada no `metodologia.md`.
 - **Linguagem:** os resultados falam de taxas e territórios, nunca de casos individuais.
 
 ## 6. Conclusão

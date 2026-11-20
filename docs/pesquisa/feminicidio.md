@@ -1,7 +1,6 @@
 # Feminicídio no Maranhão
 
 - **Status:** planejada
-- **Orientador:** a definir
 
 ## Cuidados metodológicos
 
@@ -11,6 +10,6 @@
 
 ## Próximos passos
 
-- [ ] Definir orientador(a) e equipe
+- [ ] Definir a equipe
 - [ ] Criar o repositório `pesquisa-feminicidio-ma` a partir do [template-pesquisa](https://github.com/GRUPO-NARA/template-pesquisa)
-- [ ] Preencher o `metodologia.md` e validar o recorte com o(a) orientador(a) antes da coleta (tema sensível — ver [protocolo](protocolo.md#5-etica-e-privacidade))
+- [ ] Preencher o `metodologia.md` e validar o recorte com a equipe antes da coleta (tema sensível — ver [protocolo](protocolo.md#5-etica-e-privacidade))
